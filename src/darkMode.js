@@ -1007,6 +1007,123 @@ class DarkModeToggle {
             transform: translateY(-7px);
             box-shadow: 0 8px 25px rgba(42, 41, 41, 0.26);
         }
+        
+        /* Headings */
+.dark .section-title, .section-titles {
+    color: #ffffff;
+    font-weight: 800;
+}
+.dark .section-subtitle, .section-subtitles {
+    color: rgba(200, 200, 200, 0.8);
+}
+
+/* ===== Hero Section ===== */
+.dark .hero {
+    
+    animation: gradient 12s ease infinite;
+}
+.dark .hero-content {
+   
+    color: #e4e4e4;
+}
+.dark .hero h1 span {
+    color: #00e0ff;
+}
+
+/* ===== Buttons ===== */
+.dark .btn.primary {
+    background: linear-gradient(90deg, #00e0ff, #007bff);
+    color: #fff;
+}
+.dark .btn.secondary {
+    border: 2px solid #00e0ff;
+    color: #00e0ff;
+}
+.dark .btn:hover {
+    box-shadow: 0 8px 20px rgba(0, 224, 255, 0.4);
+}
+
+/* ===== Services Section ===== */
+.dark .services {
+     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+}
+.dark .service-card {
+   
+    color: #e4e4e4;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.dark .service-card:hover {
+    
+    box-shadow: 0 8px 25px rgba(0, 224, 255, 0.2);
+}
+
+/* ===== Case Studies ===== */
+.dark .case-studies {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    color: #f0f0f0;
+}
+.dark .case-card {
+   
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dark .case-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 224, 255, 0.2);
+}
+.dark .case-result {
+   
+    color: #00e0ff;
+}
+
+/* ===== Testimonials ===== */
+.dark .testimonials {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+}
+.dark .quote {
+    color: rgba(121, 119, 119, 0.47);
+}
+.dark .author {
+    color: #82d6e1ff;
+}
+
+/* ===== Contact Section ===== */
+.dark .contact {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+.dark .contact-container {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+.dark .contact-form input,
+.dark .contact-form textarea {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+.dark .contact-form input::placeholder,
+.dark .contact-form textarea::placeholder {
+    color: rgba(200, 200, 200, 0.6);
+}
+.dark .contact-form button {
+    background: linear-gradient(90deg, #00e0ff, #007bff);
+    color: #fff;
+}
+.dark .contact-form button:hover {
+    box-shadow: 0 8px 20px rgba(0, 224, 255, 0.4);
+}
+
+/* ===== Floating Icons ===== */
+.dark .floating-icons span {
+    color: rgba(0, 224, 255, 0.2);
+}
+
+/* ===== Animations ===== */
+.dark @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
         `;
         document.head.appendChild(style);
