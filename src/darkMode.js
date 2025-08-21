@@ -880,17 +880,22 @@ class DarkModeToggle {
 }
 
 .dark label {
-    color: #cbd5e1;
+    color: #eceff3ff;
 }
 
 .dark input,
 .dark textarea {
-    background: #0d1b2a;
+    background: #4a4c4eff;
     color: #e2e8f0;
     border-color: #334155;
+
 }
+     .dark .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(244, 240, 240, 0.6);
+        }
 /* DARK MODE STYLES */
-.dark .services-section {
+.dark .services {
     background: #0f172a; /* deep navy */
 }
 
@@ -1065,6 +1070,10 @@ class DarkModeToggle {
    .dark .service-card:hover {
             transform: translateY(-7px);
             box-shadow: 0 8px 25px rgba(42, 41, 41, 0.26);
+        }
+
+        .dark .services {
+        background-color: dark blue;
         }
 
         `;
